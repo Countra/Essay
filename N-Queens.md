@@ -42,19 +42,21 @@ void Generatep(int index)
 				}
 			}
 		//如果可以把皇后放在第x行
-		if(flag)
-		{
-			//令第index列的皇后的行号为x
-			p[index] = x;
-			//表示第x行已被占用
-			hash[x] = true;
-			//递归处理第index+1 列皇后
-			Generatep(index+1);
-			//递归完毕后，还原第x行为未占有
-			hash[x] = false;
-		}
+			if(flag)
+			{
+				//令第index列的皇后的行号为x
+				p[index] = x;
+				//表示第x行已被占用
+				hash[x] = true;
+				//递归处理第index+1 列皇后
+				Generatep(index+1);
+  				//递归完毕后，还原第x行为未占有
+				hash[x] = false;
+  			}
+		}	
 	}
-	}
+
+
 }
 ```
 
