@@ -53,7 +53,7 @@ void Generatep(int index)
   				//递归完毕后，还原第x行为未占有
 				hash[x] = false;
   			}
-		}	
+		}
 	}
 
 
