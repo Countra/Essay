@@ -1,4 +1,16 @@
-﻿[toc]
+﻿
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [N 皇后问题](#n-皇后问题)
+	- [问题概述](#问题概述)
+		- [相关算法回顾](#相关算法回顾)
+		- [回溯法思路](#回溯法思路)
+
+<!-- /code_chunk_output -->
+
 
 # N 皇后问题
 
