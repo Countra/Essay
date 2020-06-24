@@ -12,9 +12,12 @@
   - [this is second title](#this-is-second-title)
     - [this is third title](#this-is-third-title)
   - [**_math formula_**](#math-formula)
+    - [流程图](#流程图)
   - [你好这是结尾](#你好这是结尾)
 
 <!-- /code_chunk_output -->
+
+
 
 
 # Test the first markdown page
@@ -77,5 +80,24 @@ Counta<sup>TM</sup>
 - [ ] incomplete
 - [x] completed
 
+### 流程图
+```flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+以及时序图:
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
 
 ## 你好这是结尾
