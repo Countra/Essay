@@ -1,16 +1,4 @@
-﻿
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [N 皇后问题](#n-皇后问题)
-	- [问题概述](#问题概述)
-		- [相关算法回顾](#相关算法回顾)
-		- [回溯法思路](#回溯法思路)
-
-<!-- /code_chunk_output -->
-
+﻿[toc]
 
 # N 皇后问题
 
@@ -79,6 +67,7 @@ void Generatep(int index)
 1. 两种搜索算法
 2. 解空间树[入门 CSDN](https://blog.csdn.net/gao1440156051/article/details/41721409)
 3. 回溯法 [入门 CSDN](https://blog.csdn.net/gao1440156051/article/details/41721409)
+
    > 回溯法代码大体框架：
 
 ```c
@@ -102,3 +91,36 @@ void Generatep(int index)
 ### 回溯法思路
 
 本算法的思路是按行来规定皇后位置，第一行放置一个皇后，第二行放置一个皇后， 第 N 行也放置一个皇后… 这样， 可以保证每行都有一个皇后，那么各行的皇后应该放置在那一列呢， 算法通过循环来完成，在循环的过程中， 一旦找到一个合适的列，则该行的皇后位置确定，则继续进行下一行的皇后的位置的确定。由于每一行确定皇后位置的方式相似，所以可以使用递归法。一旦最后 一行的皇后位置确定，则可以得到一组解。找到一组解之后， 之前确定皇后应该放置在哪一列的循环其实才进行了一轮循环的， 算法通过该循环遍历所有的列，以此确定每一行所有可能的列的位置。在从一轮循环进入下一轮循环之前，算法需要清除在上一轮被标记为不可放置皇后的标记，也就是回溯。因为进入下一轮循环之后，同一行的皇后的列的位置会发生了变化，之前被标记为不可放置皇后的列和正反对角线位置都已经失效。
+
+### 流程图
+
+```flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+以及时序图:
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
+> 测试图片
+
+<!-- > ![测试图片](https://cdn.jsdelivr.net/gh/Countra/Picgo_pic/images/测试图片.png) -->
+
+---
+
+![冰菓](https://cdn.jsdelivr.net/gh/Countra/Picgo_pic/images/冰菓.png)
+
+---
+
+## The end
