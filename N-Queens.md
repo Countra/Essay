@@ -121,6 +121,7 @@ Bob-->Alice: I am good thanks!
 
 ![冰菓](https://cdn.jsdelivr.net/gh/Countra/Picgo_pic/images/冰菓.png)
 
+![test](https://cdn.jsdelivr.net/gh/Countra/Picgo_pic/images/test.png)
 ---
 
 ## The end
